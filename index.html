@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Activity 05 – To-do-list – Chuenkamon Trakunnit – 67103093</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Material Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #b982b6, #9e4777);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-6">
+
+  <div class="w-full max-w-6xl">
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-white mb-2">
+        Class Activity 05 – To-do-list 💜
+      </h1>
+      <p class="text-gray-500">
+        Organize your tasks and make your day productive ✨
+      </p>
+    </div>
+
+    <!-- Image Banner -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <img class="rounded-2xl shadow-md h-48 w-full object-cover"
+        src="https://job.bangkokpost.com/image_article/prefix_1/1990/1990/qqp51e5muj2rpokespbmatf4s0.jpg">
+      <img class="rounded-2xl shadow-md h-48 w-full object-cover"
+        src="https://fingerscanshop.com/wp-content/uploads/2019/10/work.jpg">
+      <img class="rounded-2xl shadow-md h-48 w-full object-cover"
+        src="https://cwtower.com/wp-content/uploads/2022/03/pexels-fauxels-3183186-crop-scaled.jpg">
+    </div>
+
+    <!-- Main Card -->
+    <div class="bg-white rounded-3xl shadow-xl p-8">
+
+      <h2 class="text-2xl font-semibold text-slate-800 mb-6">
+        Semester Planning 📚
+      </h2>
+
+      <!-- Form -->
+      <form id="todo-form" class="flex flex-col md:flex-row gap-4 mb-8">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="✨ What do you need to do?"
+          class="flex-1 border border-gray-300 rounded-xl px-5 py-3
+                 focus:outline-none focus:ring-2 focus:ring-purple-400"
+          required
+        />
+
+        <button
+          type="submit"
+          class="bg-purple-600 text-white px-6 py-3 rounded-xl
+                 hover:bg-purple-700 transition flex items-center justify-center gap-2"
+        >
+          <span class="material-symbols-outlined">add</span>
+          Add Task
+        </button>
+      </form>
+
+      <!-- Todo List -->
+      <ul
+        id="todo-list"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></ul>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
